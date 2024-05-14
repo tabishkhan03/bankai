@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.team-section{
+    padding :80px 0px 80px 0px;
+    background-color: #F5F5FD;
+}
+section{
+    padding :80px 0px 80px 0px;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: transparent;
+}
+.navbar{
+    justify-content: space-between;
+    background-color: transparent;
+}
+.banner{
+    background-image: url("../images/banner.jpg");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color:white
+}
+.navbar-brand img{
+    height: auto;
+    width: 180px;
+}
+.collapse .navbar-nav li a{
+    position: relative;
+}
+.collapse .navbar-nav li a::before{
+    position: absolute ;
+    bottom: 0;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 60%;
+    content: "";
+    background-color: #F06636;
+    opacity: 0;
+}
+.collapse .navbar-nav li a:hover::before{
+    opacity: 1;
+}
+.collapse .navbar-nav li .active::before{
+    opacity: 1  ;
+}
+.banner-heading{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+.top-heading{
+    color:#C6C5D3;
+    font-size: 18px;
+    padding:0px 0px 0px 20px;
+    border-left: 3px solid;
+    border-color: #F06636;
+    font-weight: 500;
+}
+.main-heading{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px 0px 10px 0px;
+}
+.information{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.r{
+    border: 1px solid white;
+    padding: 5px 11px 5px 12px;
+}
+.r-text{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.release-date{
+    padding: 5px 0px 5px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.release-date::before{
+    content: "•";
+    color: #F06636;
+    font-size: 45px;
+    margin: 10px;
+}
+.release-date::after{
+    content: "•";
+    color: #F06636;
+    font-size: 45px;
+    margin: 10px;
+}
+.navbar button {
+    background-color: transparent;
+    border: none;
+    color: #F06636;
+    font-size: 28px;
+}
+.geners{
+    background-color: #F06636;
+    padding: 4px 10px 4px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.description{
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 400;
+    margin: 0px 0px 25px 0px;
+}
+.intrest-btn{
+    background-color: #F06636;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+    display: block;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+}
+.intrest-btn:hover{
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:576px) {
+    .main-heading{
+        font-size: 40px;
+        font-weight: 700;
+        margin: 10px 0px 5px 0px;
+    }
+    .description{
+        font-size: 16px;
+        padding-top: 10px;
+        margin: 0px 0px 15px 0px;
+    }
+    .release-date{
+        padding: 5px 0px 5px 0px;
+        font-weight: 500;
+        font-size: 12px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .geners{
+        font-size: 16px;
+    }
+    .r-text{
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+
+section figure img{
+    height: 100%;
+    width: 100%;
+}
+
+section figure{
+    width: 100%;
+    margin-bottom: 0;
+}
+.section-heading{
+    color:#F06636;
+    font-size: 16px;
+    padding:0px 0px 0px 20px;
+    border-left: 3px solid;
+    border-color: #F06636;
+    font-weight: 600;
+}
+
+.section-h2{
+    padding-top: 10px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #34355E;
+}
+@media screen and (max-width:992px) {
+    .section-h2{
+        font-size: 35px;
+    }
+}
+
+.section-description{
+    font-size: 16px;
+    color: #585A67;
+    margin:0px;
+}
+
+.founder-wrap figure{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.team-info{
+    background-color: #ffff;
+    padding: 15px;
+    height: 90%;
+    margin: 0px 0px 0px -50px;
+}
+
+.team-section .team-info span{
+    font-size: 16px;
+    color: #F06636;
+    font-weight: 500;
+}
+.team-section .team-info h5{
+    font-size: 24px;
+    color: #34355E;
+    font-weight: 600;
+}
+.team-section .team-info p{
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #585A67;
+}
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .team-info{
+        padding: 8px;
+        height: 80%;
+        margin: 0px 0px 0px -50px;
+    }
+    
+    .team-section .team-info span{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .team-section .team-info h5{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .team-section .team-info p{
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    .team-info{
+        padding: 12px;
+        margin-left: -30px ;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .team-section .team-info span{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .team-section .team-info h5{
+        font-size: 26x;
+        font-weight: 600;
+    }
+    .team-section .team-info p{
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .team-info{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width:767px) {
+    .team-info{
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+    .section-h2{
+        font-size: 28px;
+    }
+    .r{
+        height: 25px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.trailer-section{
+    padding :80px 0px 80px 0px;
+    background-color: #1D1C44;
+}
+
+.movie-info{
+    height: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.duration{
+    padding: 5px 0px 5px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.duration::before{
+    content: "•";
+    color: #F06636;
+    font-size: 45px;
+    margin: 10px;
+}
+.duration::after{
+    content: "•";
+    color: #F06636;
+    font-size: 45px;
+    margin: 10px;
+}
+.imdb span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.year{
+    padding: 5px 0px 5px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.year::before{
+    content: "•";
+    color: #F06636;
+    font-size: 45px;
+    margin: 10px;
+}
+.year::after{
+    content: "•";
+    color: #F06636;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.drama-text{
+    background-color: #F06636;
+    padding: 4px 10px 4px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.movie-description{
+    font-size: 16px;
+    color: #ffff;
+}
+
+.watch-btn{
+    background-color: #F06636;
+    padding:  13px;
+    margin:  0px;
+    margin-right: 40px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    width: 180px;
+    text-align: center;
+    font-weight: 500;
+    height: 30%;
+}
+.watch-btn:hover{
+    color:white;
+    text-decoration: none;
+}
+.movies-section .watch-trailer-svg{
+    color: #F06636;
+    background-color: white;
+    transform: rotate(90deg);
+    font-size: 51px;
+    border-radius: 50%;
+    padding: 15px 12px;
+}
+.movies-section .watch-trailer-svg path{
+    margin: 0;
+    padding: 0;
+}
+
+.transparent-btn{
+    background-color: transparent;
+    margin:  0px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    height: 30%;
+    align-items: center;
+}
+.transparent-btn:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.transparent-btn span{
+    padding: 12px;
+}
+
+@media screen and (max-width:515px) {
+    .movie-info{
+        height: 33px;
+        margin:10px 0px
+    }
+    .duration{
+        padding: 3px 0px 3px 0px;
+        font-size: 16px;
+    }
+    .duration::before{
+        font-size: 43px;
+        margin: 8px;
+    }
+    .duration::after{
+        font-size: 43px;
+        margin: 8px;
+    }
+    .imdb span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .year{
+        padding: 3px 0px 3px 0px;
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .year::before{
+        font-size: 43px;
+        margin: 8px;
+    }
+    .year::after{
+        font-size: 43px;
+        margin: 8px;
+    }
+    
+    .drama-text{
+        padding: 2px 8px 2px 8px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffff;
+    }
+    
+    .movie-description{
+        font-size: 14px;
+        color: #ffff;
+    }
+    
+    .watch-btn{
+        padding:  11px;
+        margin-right: 38px;
+        font-size: 14px;
+        width: 160px;
+        font-weight: 500;
+        height: 30%;
+    }
+    .movies-section .watch-trailer-svg{
+        font-size: 49px;
+        border-radius: 50%;
+        padding: 13px 10px;
+    } 
+    .transparent-btn{
+        font-size: 14px;
+        font-weight: 500;
+        height: 30%;
+        align-items: center;
+    }
+    .transparent-btn:hover{
+        color:white;
+        text-decoration: none;
+    }
+    
+    .transparent-btn span{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:435px) {
+    .movie-info{
+        height: 20px;
+    }
+    .duration{
+        padding: 1px 0px 1px 0px;
+        font-size: 12px;
+    }
+    .r{
+        padding: 0px 4px 0px 4px;
+    }
+    .duration::before{
+        font-size: 39px;
+        margin: 4px;
+    }
+    .duration::after{
+        font-size: 39px;
+        margin: 4px;
+    }
+    .imdb span{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .year{
+        padding: 1px 0px 1px 0px;
+        font-weight: 500;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+    .year::before{
+        font-size: 39px;
+        margin: 4px;
+    }
+    .year::after{
+        font-size: 39px;
+        margin: 4px;
+    }
+    
+    .drama-text{
+        padding: 1px 4px 1px 4px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .movie-description{
+        font-size: 16px;
+    }.transparent-btn span{
+        padding: 6px;
+    }
+}
+@media screen and (max-width:525px){
+    .btns{
+        flex-direction: column;
+    }
+    .watch-btn{
+        margin-bottom: 12px;
+    }
+}
+
+.contact-section{
+    padding :80px 0px 80px 0px;
+    background-color: hsl(240deg, 100%, 98%);
+    background-image: url("assets/images/bankai-films-contact-bg.jpg");
+}
+
+.follow-text{
+    color: #34355E;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.icons{
+    display: flex;
+}
+.sm-icon{
+    font-size: 22px;
+    border: 3px solid #F06636;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F06636;
+}
+.sm-icon:hover{
+    color: #F06636;
+}
+.contact-form input{
+    height: 60px;
+    border: none;
+    width: 100%;
+    margin: 10px 20px;
+    padding: 10px;
+    outline: none;
+}
+.contact-form textarea{
+    height: 100px;
+    border: none;
+    width: 100%;
+    margin: 10px 20px;
+    padding: 10px;
+    outline: none;
+}
+@media screen and (max-width:992px) {
+    .contact-form input{
+        margin: 10px 0px;
+    }
+    .contact-form textarea{
+        margin: 10px 0px;
+    }
+}
+
+footer{
+    background-color: #1D1C44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+footer .footer-div{
+    align-items: center;
+    justify-content: center;
+    color: #F06636;
+    font-size: 20px;
+    font-weight: 400;
+}
+@media screen and (max-width:767px) {
+    footer{
+        height: 80px;
+    }
+    footer .footer-div{
+        font-size: 15px;
+    }
+}
+.submitbutton{
+    background-color: #F06636;
+    padding:  13px;
+    margin:  0px;
+    margin-left: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    width: 220px;
+    text-align: center;
+    font-weight: 500;
+}
+.submitbutton:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.stickyheader{
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    position: sticky;
+    box-shadow: 0px 4px 30px 5px #585a6769;
+
+}
+/* .nav-link2S{
+    color: black;
+    
+} */
+
+.sidemenu{
+    position: fixed;
+    z-index: 101;
+    top: 0px;
+    left:0px; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.sidemenu-top-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(184, 183, 183);
+    padding: 20px;
+}
+.sidemenu-top-div .sidemenu-logo{
+    width: 150px;
+}
+.sidemenu-top-div .sidemenu-cross{
+    height: 30px;
+    width: 30px;
+    
+}
+.sidemenu-list{
+    list-style: none;
+}
+.sidemenu-item{
+    color: black;
+    display: block;
+    width: 100%;
+    padding:20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(184, 183, 183);
+}
+
+.sidemenu-item:hover{
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+.active-link{
+    background-color: rgba(209, 67, 19, 0.0784313725);
+    border-left:4px solid #F06636 ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.sidemenuphone{
+    transform: translateX(0%);
+}
+
+.white-logo-stick{
+    width: 150px;
+}
+.watch-btn:hover{
+    background-color: #be3d13;
+}
+.submitbutton:hover{
+    background-color: #be3d13;
+}
+.intrest-btn:hover{
+    background-color: #be3d13;
+}
+.fig-relative{
+    position: relative;
+}
+
+.img-icon{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 22px;
+    background-color: #F06636;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.img-icon:hover{
+    background-color: #34355E;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+}
